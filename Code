@@ -1,0 +1,20 @@
+import os
+import sys
+
+print("Enter a list of numbers and press Enter when you are done")
+def simpleArraySum(ar):
+    sum = 0 # sets sum to 0
+    for i in ar: # searches each integer in array
+        sum = sum + i # adds each of these integers together
+
+    return(sum)
+
+if __name__ == '__main__':
+    # takes three numbers and puts them into an array
+    ar = list(map(int, input().split()))
+
+    # calls on the simpleArraySum function
+    result = simpleArraySum(ar)
+
+    # prints the results
+    print(result)
